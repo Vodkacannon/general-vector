@@ -7,10 +7,9 @@ struct vec2<T> {
 };
 
 template <typename T>
-vec2<T> operator=(vec2<T>& rhs) {
+vec2<T> operator=(const vec2<T>& rhs) {
     return vec2<T> { rhs.x, rhs.y };
 }
-    
 
 template <typename T>
 bool operator==(vec2<T> lhs, vec2<T> rhs) {

@@ -1,6 +1,5 @@
 template <typename T>
-struct vec2f<T> {
+struct vec2<T> {
     T x;
     T y;
-    T z;
 };

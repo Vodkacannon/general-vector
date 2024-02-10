@@ -19,8 +19,12 @@ namespace gv {
     }
     
     template <typename T>
+    vec2<T> operator+(vec2<T> lhs, vec2<T> rhs) {
+        return vec2<T> { lhs.x + rhs.x, lhs.y + rhs.y };
+    }
+    
+    template <typename T>
     T length(const vec2<T>& vec) {
         return sqrt(vec.x * vec.x + vec.y * vec.y);
     }
 }
-

@@ -1,5 +1,5 @@
 #include <cmath>
-
+namespace gv {
 template <typename T>
 struct vec2<T> {
     T x;
@@ -21,5 +21,5 @@ template <typename T>
 T length(const vec2<T>& vec) {
     return sqrt(vec.x * vec.x + vec.y * vec.y);
 }
-
+}
 

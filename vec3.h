@@ -4,3 +4,6 @@ struct vec3<T> {
     T y;
     T z;
 };
+
+template <typenme T>
+struct vec3<
